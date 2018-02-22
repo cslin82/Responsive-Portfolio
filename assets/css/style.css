@@ -7,13 +7,12 @@ body {
 .container {
     width: 960px;
     margin: auto;
-    /* display: flex; */
-    /* flex-direction: row; */
     align-items: center;
     flex-direction: row;
     /* border: 3px dashed purple; */
     justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
 
 }    
 
@@ -173,4 +172,28 @@ h1#myname, nav {
 
 #topcontainer>.container {
     height: 95px;
+}
+
+
+/* New Media Query stuff  */
+
+@media screen and (max-width: 980px) {
+    header {
+        width: 100%;
+    }
+
+    #topcontainer>.container {
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    
 }
