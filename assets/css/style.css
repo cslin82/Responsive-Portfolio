@@ -178,9 +178,7 @@ h1#myname, nav {
 /* New Media Query stuff  */
 
 @media screen and (max-width: 980px) {
-    header {
-        width: 100%;
-    }
+
 
     #topcontainer>.container {
         height: fit-content;
@@ -194,6 +192,9 @@ h1#myname, nav {
 }
 
 @media screen and (max-width: 640px) {
-    
+    header, nav {
+        text-align: center;
+        float: none;
+        width: 100%;    }
     
 }
