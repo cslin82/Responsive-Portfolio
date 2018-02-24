@@ -1,0 +1,19 @@
+/* Diagnostic borders */
+
+header, nav {
+    border: 1px solid black;
+}
+
+#topcontainer, .sidebyside {
+    border: 3px dashed blue;
+}
+.sidebyside {
+    display: flex;
+    /* border: 3px dashed purple; */
+}
+
+.container {
+    border: 3px dotted orange;
+    
+}
+

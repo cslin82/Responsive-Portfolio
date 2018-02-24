@@ -12,38 +12,82 @@
 
 
     <style>
-        section, aside {
+        section,
+        aside {
             border: 2px dotted orange;
         }
-    
-        header { width: 40%; float: left; }
-        nav { min-width: 20%; float: right; }
 
-        #topcontainer { display: flex; justify-content: center; background-color: white; }
-        .container { width: 960px; }
-    
+        header {
+            width: 40%;
+            float: left;
+        }
+
+        nav {
+            min-width: 20%;
+            float: right;
+        }
+
+        #topcontainer {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .container {
+            width: 960px;
+        }
+
+        nav a {
+            padding-right: 0.75em;
+            padding-left: 0.75em;
+        }
+
+        h1#myname {
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+        }
 
         /* New Media Query stuff  */
-    
+
         @media screen and (max-width: 980px) {
-            header { width: 40%; float: left; }
-            nav { min-width: 20%; float: right; }
-            .container { width: 750px; }
-    
+            header {
+                width: 40%;
+                float: left;
+            }
+            nav {
+                min-width: 20%;
+                float: right;
+            }
+            .container {
+                width: 750px;
+            }
+
         }
-    
-        @media screen and (max-width: 768px) {
 
+        @media screen and (max-width: 768px) {}
 
-}
-    
         @media screen and (max-width: 640px) {
-            #topcontainer { width:100%; display: initial; }
-            header { width: 100%; max-width: 100%; float: none; }
-            nav { width: 100%; min-width: 100%; float: none; height: 75px; line-height: 75px;}
-            nav a { padding-right: 1.5em; padding-left: 1.5em; }
+            #topcontainer {
+                width: 100%;
+                display: initial;
+            }
+            header {
+                width: 100%;
+                max-width: 100%;
+                float: none;
+            }
+            nav {
+                width: 100%;
+                min-width: 100%;
+                float: none;
+                height: 75px;
+                line-height: 75px;
+            }
+            nav a {
+                padding-right: 1.5em;
+                padding-left: 1.5em;
+            }
         }
-    
     </style>
 
 
@@ -54,7 +98,7 @@
         <div class="container">
             <header>
                 <h1 id="myname">Christopher Lin</h1>
-    
+
             </header>
             <nav>
                 <p>
