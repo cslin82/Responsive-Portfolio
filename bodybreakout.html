@@ -12,17 +12,20 @@
     section, aside {
         border: 2px dotted orange;
     }
-
+    aside { min-width: 256px;}
+    .container { width: 960px; }
+    #portfoliocontainer { border: 2px solid lime; width: 100%}
 
     /* New Media Query stuff  */
 
     @media screen and (max-width: 980px) {
-
+        .container { width: 750px; }
     }
 
     @media screen and (max-width: 768px) {
         .article { width: 100%; }
         .sidebyside { display: initial;}
+        #articlecontainer, aside { width: 100%; max-width: 100%; float: none; }
     }
 
     @media screen and (max-width: 640px) {
@@ -53,12 +56,10 @@
                 <p>Ongoing game obsession:
                     <a href="https://kerbalspaceprogram.com/">Kerbal Space Program</a>
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorum alias doloribus debitis dolore praesentium obcaecati voluptatum optio quo repellat, minima, nulla voluptas necessitatibus ipsa modi commodi, beatae quaerat minus.</p>
             </div>
 
 
         </section>
-
         <aside>
             <h1>Connect with me</h1>
             <!-- icons go here -->
