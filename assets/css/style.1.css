@@ -49,8 +49,8 @@ header, nav {
     text-align: center;
     line-height: 95px;
     margin: 0px; 
-    width: 100%;
-    /* float: left; */
+    /* width: 100%; */
+    float: left;
 }
 
 #topcontiner {
@@ -72,7 +72,10 @@ header, nav {
     /* border: 3px dashed purple; */
 }
 
-
+.container {
+    border: 3px dotted orange;
+    
+}
 
 
 
