@@ -146,6 +146,40 @@ footer>p {
     padding: 0px;
 }
 
+
+input, textarea {
+    width: 90%;
+}
+
+.portfolioimage {
+    border: solid 1px black;
+}
+
+#portfoliocontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+   
+}
+
+.portfolioimagebox {
+    margin: 1em;
+    /* padding: 1em; */
+}
+
+.portfolioimagebox h2 {
+    background-color: #4aaaa5;
+    font-size: 120%;
+    color: white;
+    padding: .25em;
+    text-align: center;
+    position: relative;
+    bottom: 25%;
+    border: solid 1px black;
+    line-height: 1.75em;
+}
+
 /* New Media Query stuff  */
 
 @media screen and (max-width: 980px) {
