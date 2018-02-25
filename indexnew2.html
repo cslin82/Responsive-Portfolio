@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>responsive header breakout</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.1.css">
+
+
+
+    <style>
+        section,
+        aside {
+            border: 2px dotted orange;
+        }
+
+        header {
+            width: 40%;
+            float: left;
+        }
+
+        nav {
+            min-width: 20%;
+            float: right;
+        }
+
+        #topcontainer {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .container {
+            width: 960px;
+        }
+
+        nav a {
+            padding-right: 0.75em;
+            padding-left: 0.75em;
+        }
+
+        h1#myname {
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+        }
+
+        /* New Media Query stuff  */
+
+        @media screen and (max-width: 980px) {
+            header {
+                width: 40%;
+                float: left;
+            }
+            nav {
+                min-width: 20%;
+                float: right;
+            }
+            .container {
+                width: 750px;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {}
+
+        @media screen and (max-width: 640px) {
+            #topcontainer {
+                width: 100%;
+                display: initial;
+            }
+            header {
+                width: 100%;
+                max-width: 100%;
+                float: none;
+            }
+            nav {
+                width: 100%;
+                min-width: 100%;
+                float: none;
+                height: 75px;
+                line-height: 75px;
+            }
+            nav a {
+                padding-right: 1.5em;
+                padding-left: 1.5em;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="topcontainer">
+        <div class="container">
+            <header>
+                <h1 id="myname">Christopher Lin</h1>
+
+            </header>
+            <nav>
+                <p>
+                    <a href="index.html">About</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="portfolio.html">Portfolio</a>
+                </p>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container sidebyside">
+        <section id="articlecontainer">
+            <h1>About Me</h1>
+            <div class="article">
+
+                <!-- <p id="articleheader">Picture, text</p> -->
+
+                <p>
+                    <img src="assets/images/chris-halloween.jpg" alt="Chris at Halloween" width="200" height="250" id="facephoto">Chris Lin is a student in the February 2018 cohort of the GW Coding Boot Camp.</p>
+                <p>In past chapters I have been a mechanical engineer, a scientist, and a photographer. This is my second year
+                    in the Washington, DC area, the furthest north I have ever lived. Before here, I lived in Texas and Louisiana.</p>
+                <p>Most anticipated upcoming TV show:
+                    <a href="https://www.hbo.com/westworld">Westworld Season 2</a>
+                </p>
+                <p>Ongoing game obsession:
+                    <a href="https://kerbalspaceprogram.com/">Kerbal Space Program</a>
+                </p>
+            </div>
+
+
+        </section>
+        <aside>
+            <h1>Connect with me</h1>
+            <!-- icons go here -->
+            <p>
+                <a href="https://github.com/cslin82">
+                    <img src="assets/images/github64.png" alt="GitHub" height="64" width="64">
+                </a>
+                <a href="https://www.linkedin.com/in/chris-lin-58b8895">
+                    <img src="assets/images/linkedin64.png" alt="LinkedIn" height="64" width="64">
+                </a>
+            </p>
+        </aside>
+    </div>
+</body>
+
+</html>

@@ -32,6 +32,12 @@ h1 {
     letter-spacing: 1px;
 }
 
+#topcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
 header {
     background-color: #4aaaa5;
     width: 40%;
@@ -66,6 +72,13 @@ header, nav {
 
 .container {
     width: 960px;
+    margin: auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 nav a {
@@ -76,6 +89,35 @@ nav a {
 h1#myname {
     padding-right: 0.5em;
     padding-left: 0.5em;
+}
+
+.sidebyside {
+    display: flex;
+}
+
+#articlecontainer {
+    width: 650px;
+}
+
+aside {
+    width: 270px;
+    height: 270px;
+    /* margin: 10px; */
+}
+aside, #articlecontainer {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+
+}
+
+#facephoto {
+    float: left;
+    border: solid black 1px;
+    margin: 0em 1em 0em 0em;
+
 }
 
 footer {
@@ -90,7 +132,11 @@ footer>p {
     margin: 0px;
 }
 
-
+#facephoto {
+    float: left;
+    border: solid black 1px;
+    margin: 0em 1em 0em 0em;
+}
 
 /* New Media Query stuff  */
 
@@ -143,5 +189,14 @@ footer>p {
     nav a {
         padding-right: 1.5em;
         padding-left: 1.5em;
+    }
+
+    #facephoto {
+        float: none;
+    }
+
+    #facephoto.after {
+        content: "";
+        clear: both;
     }
 }
