@@ -169,7 +169,7 @@ input, textarea {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .portfolioimagebox {
@@ -254,8 +254,8 @@ input, textarea {
         line-height: 65px;
     }
     nav a {
-        padding-right: 1.5em;
-        padding-left: 1.5em;
+        padding-right: 5%;
+        padding-left: 5%;
     }
 
     #facephoto {
@@ -279,8 +279,8 @@ input, textarea {
         margin: auto;
     }
     .portfolioimage, .portfolioimagebox h2 {
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 0px;
+        margin-right: 0px;
     } 
 
 }
