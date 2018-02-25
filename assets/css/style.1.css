@@ -8,6 +8,14 @@ body {
     background-image: url("../images/frenchstucco.png")
 }
 
+h1, section, p, footer {
+   margin: 1em;
+}
+
+.article, #articleheader, aside {
+    margin: 0em 1em;
+}
+
 a {
     text-decoration: none;
     color: #63E4DD;
@@ -52,6 +60,7 @@ nav {
 
 header h1 {
     color: white;
+    margin: 0px;
 }
 
 header, nav {
@@ -93,6 +102,7 @@ h1#myname {
 
 .sidebyside {
     display: flex;
+    align-items: flex-start;
 }
 
 #articlecontainer {
@@ -105,11 +115,11 @@ aside {
     /* margin: 10px; */
 }
 aside, #articlecontainer {
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding: 0.3em;
+    margin: 0.5em 0em;
     background-color: #ffffff;
     border: 1px solid #dddddd;
+    overflow: auto;
 
 }
 
@@ -159,8 +169,7 @@ input, textarea {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-   
+    justify-content: space-around;
 }
 
 .portfolioimagebox {
@@ -209,9 +218,22 @@ input, textarea {
 
 
 @media screen and (max-width: 768px) {
-    .article { width: 100%; }
-    .sidebyside { display: initial;}
-    #articlecontainer, aside { width: 100%; max-width: 100%; float: none; }
+    .article { 
+        width: 100%;
+    }
+    .sidebyside {
+        display: initial;
+    }
+    #articlecontainer, aside {
+        width: 100%; max-width: 100%; float: none;
+    }
+    #bottomcontainer {
+        position: initial;
+    }
+
+    .article {
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -229,7 +251,7 @@ input, textarea {
         min-width: 100%;
         float: none;
         height: 75px;
-        line-height: 75px;
+        line-height: 65px;
     }
     nav a {
         padding-right: 1.5em;
@@ -238,6 +260,9 @@ input, textarea {
 
     #facephoto {
         float: none;
+        display: block;
+        margin: auto;
+        margin-bottom: 0.5em;
     }
 
     #facephoto::after {
@@ -249,4 +274,13 @@ input, textarea {
     .container {
         width: 100%;
     }
+    
+    aside {
+        margin: auto;
+    }
+    .portfolioimage, .portfolioimagebox h2 {
+        margin-left: 1em;
+        margin-right: 1em;
+    } 
+
 }
