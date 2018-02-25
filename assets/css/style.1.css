@@ -138,6 +138,14 @@ footer>p {
     margin: 0em 1em 0em 0em;
 }
 
+#bottomcontainer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 5px solid #4aaaa5;
+    padding: 0px;
+}
+
 /* New Media Query stuff  */
 
 @media screen and (max-width: 980px) {
@@ -149,19 +157,22 @@ footer>p {
         min-width: 20%;
         float: right;
     }
+
+    #articlecontainer {
+        width: 450px;
+    }
+
+    aside {
+        width: 250px;
+    }
+
     .container {
         width: 750px;
     }
 
 }
 
-#bottomcontainer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: 5px solid #4aaaa5;
-    padding: 0px;
-}
+
 
 @media screen and (max-width: 768px) {
     .article { width: 100%; }
@@ -195,8 +206,13 @@ footer>p {
         float: none;
     }
 
-    #facephoto.after {
+    #facephoto::after {
         content: "";
         clear: both;
+        display: table;
+    }
+
+    .container {
+        width: 100%;
     }
 }
